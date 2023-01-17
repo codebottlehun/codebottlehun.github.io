@@ -35,7 +35,7 @@ coolblack: #090a0b
 # snowwhite: #ffffff
 #
 theme_color: coolblack
-night_mode: "dark"
+night_mode: "manual"
 # Build settings
 #theme: minima
 #theme: jekyll-theme-yat
