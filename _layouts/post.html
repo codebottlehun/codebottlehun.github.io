@@ -59,6 +59,8 @@ sidebar:
     {%- assign result = hidden | where_exp: "item", "item == 'comments'" -%}
     {%- if result.size == 0 -%}
     <div class="post-comments">
+      {%- if page.comments != false -%}
+
       <script src="https://giscus.app/client.js"
         data-repo="codebottlehun/comments"
         data-repo-id="R_kgDOIs4mBQ"
@@ -74,7 +76,6 @@ sidebar:
         crossorigin="anonymous"
         async>
       </script>
-      {%- if page.comments != false -%}
 
       {%- if site.disqus.shortname -%}
       {%- include extensions/comments/disqus.html -%}
