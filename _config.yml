@@ -30,12 +30,12 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username:  codebottlehun
 
-coolblack: #090a0b
+# coolblack: #090a0b
 # spacegrey: #353535
 # snowwhite: #ffffff
 #
-theme_color: coolblack
-night_mode: "manual"
+# theme_color: coolblack
+night_mode: "on"
 # Build settings
 #theme: minima
 #theme: jekyll-theme-yat
@@ -56,13 +56,6 @@ translate_langs:
   - lang: ko
     img: https://cdn.countryflags.com/thumbs/south-korea/flag-400.png
     text: Korean
-
-header_pages:
-  - index.html
-  - archives.html
-  - categories.html
-  - tags.html
-  - about.md
 
 markdown: kramdown
 kmarkdown:
