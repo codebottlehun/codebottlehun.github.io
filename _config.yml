@@ -18,6 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+author: codebottlehun
 title: Bottle.jang
 email: codebottlehun@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
@@ -29,12 +30,43 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username:  codebottlehun
 
+coolblack: #090a0b
+# spacegrey: #353535
+# snowwhite: #ffffff
+#
+theme_color: coolblack
+night_mode: "dark"
 # Build settings
 #theme: minima
 #theme: jekyll-theme-yat
 remote_theme: "jeffreytse/jekyll-theme-yat"
+
+defaults:
+  home:
+    heading: "Building"
+    subheading: "즐겁다!"
+#    banner: "Your image url"
+
+copyright: "Unpublished Work (cleft) 2017-{currentYear} {author}"
+
+yat:
+  date_format: "%b %d, %Y"
+
+translate_langs:
+  - lang: ko
+    img: https://cdn.countryflags.com/thumbs/south-korea/flag-400.png
+    text: Korean
+
+markdown: kramdown
+kmarkdown:
+  input: GFM
+
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-spaceship
 
 giscus:
   repo: "codebottlehun/comments"
