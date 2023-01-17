@@ -61,32 +61,8 @@ sidebar:
     <div class="post-comments">
       {%- if page.comments != false -%}
 
-      <script src="https://giscus.app/client.js"
-        data-repo="codebottlehun/comments"
-        data-repo-id="R_kgDOIs4mBQ"
-        data-category="[ENTER CATEGORY NAME HERE]"
-        data-category-id="[ENTER CATEGORY ID HERE]"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="ko"
-        crossorigin="anonymous"
-        async>
-      </script>
-
-      {%- if site.disqus.shortname -%}
-      {%- include extensions/comments/disqus.html -%}
-      {%- endif -%}
-
-      {%- if site.gitment.username -%}
-      {%- include extensions/comments/gitment.html -%}
-      {%- endif -%}
-
-      {%- if site.utterances.repo -%}
-      {%- include extensions/comments/utterances.html -%}
+      {%- if site.giscus.repo -%}
+      {%- include extensions/comments/giscus.html -%}
       {%- endif -%}
 
       {%- endif -%}
