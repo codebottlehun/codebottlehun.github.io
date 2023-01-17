@@ -35,7 +35,7 @@ github_username:  codebottlehun
 # snowwhite: #ffffff
 #
 # theme_color: coolblack
-night_mode: "on"
+
 # Build settings
 #theme: minima
 #theme: jekyll-theme-yat
@@ -56,6 +56,8 @@ translate_langs:
   - lang: ko
     img: https://cdn.countryflags.com/thumbs/south-korea/flag-400.png
     text: Korean
+
+night_mode: "on"
 
 markdown: kramdown
 kmarkdown:
